@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Careerly AI - AI Job Assistant for CVs, cover letters and job matching." />
+  <title>Careerly AI — AI Job Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#top">Careerly<span>AI</span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#assistant">AI Assistant</a>
+    </nav>
+    <button class="nav-btn" onclick="scrollToAssistant()">Get started</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="badge">✦ AI-powered career assistant</div>
+        <h1>Find the job.<br /><span>Get the interview.</span></h1>
+        <p>Careerly AI helps you improve your CV, write tailored applications and understand which jobs fit your skills.</p>
+        <div class="hero-actions">
+          <button class="primary" onclick="scrollToAssistant()">Try Careerly AI →</button>
+          <a class="secondary" href="#features">Explore features</a>
+        </div>
+        <div class="trust"><span>✓ Free to try</span><span>✓ No experience needed</span><span>✓ Built for job seekers</span></div>
+      </div>
+      <div class="hero-card">
+        <div class="window-top"><span></span><span></span><span></span><b>Careerly AI</b></div>
+        <div class="score-row"><div><small>CV MATCH SCORE</small><strong>87%</strong></div><div class="ring">87</div></div>
+        <div class="match"><div class="match-icon">✓</div><div><b>Customer Support Specialist</b><small>Strong match · 12 skills</small></div><em>92%</em></div>
+        <div class="match"><div class="match-icon">✓</div><div><b>Chat Support Agent</b><small>Good match · 9 skills</small></div><em>86%</em></div>
+        <div class="match"><div class="match-icon">✓</div><div><b>Junior Operations Assistant</b><small>Potential match · 7 skills</small></div><em>79%</em></div>
+      </div>
+    </section>
+
+    <section class="stats"><div><b>1</b><span>profile</span></div><div><b>AI</b><span>powered</span></div><div><b>24/7</b><span>career help</span></div><div><b>∞</b><span>applications</span></div></section>
+
+    <section id="features" class="section">
+      <div class="section-heading"><div class="eyebrow">WHY CAREERLY</div><h2>Everything you need<br />to apply <span>smarter.</span></h2><p>Stop sending the same CV everywhere. Let AI help you make every application more relevant.</p></div>
+      <div class="feature-grid">
+        <article><div class="icon">◈</div><h3>CV Analyzer</h3><p>Upload your CV and get an instant score, strengths, weaknesses and practical improvements.</p></article>
+        <article><div class="icon">✎</div><h3>Smart Applications</h3><p>Create tailored cover letters and application messages based on the job description.</p></article>
+        <article><div class="icon">⌁</div><h3>Job Match</h3><p>Compare your skills with a job and see what makes you a strong or weak candidate.</p></article>
+        <article><div class="icon">✦</div><h3>Career Assistant</h3><p>Ask career questions and get clear, useful answers without complicated language.</p></article>
+      </div>
+    </section>
+
+    <section id="how" class="how section"><div class="section-heading"><div class="eyebrow">HOW IT WORKS</div><h2>Your job search, <span>simplified.</span></h2></div><div class="steps"><div><b>01</b><h3>Create your profile</h3><p>Add your experience, skills and target role.</p></div><div><b>02</b><h3>Analyze a job</h3><p>Paste a job description and see your match.</p></div><div><b>03</b><h3>Apply with confidence</h3><p>Generate tailored application content.</p></div></div></section>
+
+    <section id="assistant" class="assistant section"><div class="assistant-box"><div class="section-heading left"><div class="eyebrow">AI ASSISTANT</div><h2>What do you want help with?</h2><p>Try a question below or write your own.</p></div><div class="prompt-row"><button onclick="usePrompt('How can I improve my CV for a chat support job?')">Improve my CV</button><button onclick="usePrompt('Write a professional cover letter for a customer support job.')">Write a cover letter</button><button onclick="usePrompt('What skills do I need for an entry-level support job?')">Find skills</button></div><div class="chat"><div id="messages"><div class="message ai">Hi! I’m Careerly AI. Tell me what job you want and I’ll help you prepare your application.</div></div><div class="input-row"><input id="prompt" placeholder="Ask Careerly AI anything about your job search..." onkeydown="if(event.key==='Enter') askAI()" /><button onclick="askAI()">Send</button></div></div></div></section>
+  </main>
+
+  <footer><div class="brand">Careerly<span>AI</span></div><p>Your AI-powered job search assistant.</p><small>© 2026 Careerly AI. All rights reserved.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
